@@ -36,5 +36,5 @@ document.getElementById('head-donation').addEventListener('click', function () {
 
 // blog btn
 document.getElementById('btn-blog').addEventListener('click', function () {
-    window.location.href = '../blog.html';
+    window.location.href = './blog.html';
 })
