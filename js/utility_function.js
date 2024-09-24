@@ -15,9 +15,26 @@ document.getElementById('btn-qut').addEventListener('click', function () {
 // history btn
 document.getElementById('head-history').addEventListener('click', function () {
     const mainDonation = document.getElementById('main');
+    document.getElementById('head-history').classList.add('bg-green-400')
+    document.getElementById('head-donation').classList.remove('bg-green-400')
+
     mainDonation.classList.add('hidden');
 
     const historyDiv = document.getElementById('history');
     historyDiv.classList.remove('hidden')
 })
+// donation btn
+document.getElementById('head-donation').addEventListener('click', function () {
+    document.getElementById('head-history').classList.remove('bg-green-400')
+    document.getElementById('head-donation').classList.add('bg-green-400')
+    // button style 
+    const historyDiv = document.getElementById('history');
+    historyDiv.classList.add('hidden');
+    const mainDonation = document.getElementById('main');
+    mainDonation.classList.remove('hidden');
+})
 
+// blog btn
+document.getElementById('btn-blog').addEventListener('click', function () {
+    window.location.href = '/blog.html';
+})

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>History</title>
+    <!-- google font config  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+
+    <!-- taiwind and daisy ui config -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- css style   -->
+    <style>
+        .font-lexend {
+            font-family: "Lexend", sans-serif;
+        }
+    </style>
+
+
+    <!-- config tailwind css  -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        'nav-bg': '#641e16',
+                        customColor: 'rgba(180, 244, 97, 1)',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .bg-nav {
+            background-color: rgba(249, 247, 243, 1);
+        }
+
+        .bg-balance {
+            background-color: rgba(243, 243, 243, 255);
+        }
+
+        .text-clifford {
+            color: #da373d;
+        }
+    </style>
+</head>
+
+<body class="font-lexend container ">
+    <header class="container mx-auto sticky top-0 bg-white bg-opacity-40 rounded-2xl  "></header>
+    <!-- Start nav bar -->
+    <nav class="bg-nav pt-2">
+        <div class="flex justify-around mx-[1%]  pb-8 ">
+            <!-- child 1 -->
+            <button id="home-btn" class="btn bg-green-400 sm:btn-sm lg:btn-md px-10">Home</button>
+            <!-- child 2  -->
+            <div class="flex items-center gap-2 text-xl">
+                <img src="./images/logo.png" alt="Images of logo" srcset="">
+                <h1 class="">Donate Bangladesh</h1>
+            </div>
+            <!-- child 3  -->
+            <div class="flex items-center gap-2 text-xl">
+                <img src="./images/coin.png" alt="" srcset="">
+                <h2 id="total-balance" class="total-banlance">50000</h2>
+                <h2>BDT</h2>
+            </div>
+        </div>
+    </nav>
+    </header>
+    <main class=" mb-12 ">
+        <h1 class="font-extrabold text-3xl m-5 mx-[10%] pb-10">Important FAQ</h1>
+        <div class="mx-[12%]">
+            <div class="collapse collapse-arrow bg-base-200">
+                <input type="radio" name="my-accordion-2" checked="checked" />
+                <div class="collapse-title text-xl font-medium">What is the Document Object Model (DOM)?</div>
+                <div class="collapse-content">
+                    <p>The DOM is one of the power full tools which is used to interactive the website and side by side
+                        it helps the user navigate the interface easily. Dom is a such a programming interface which is
+                        helps to build a website like a tree structure and it takes the every element as a node like
+                        tag, attributes etc. using Dom we can easily handle this element like update, added, remove.</p>
+                </div>
+            </div>
+            <div class="collapse collapse-arrow bg-base-200">
+                <input type="radio" name="my-accordion-2" />
+                <div class="collapse-title text-xl font-medium">How do you select an element from the DOM?</div>
+                <div class="collapse-content">
+                    <p>We can select element form DOM using 5 methods
+                        <span><br></span>
+                        1) getElementById() <span><br></span>
+                        2)getElementsByClassName() <span><br></span>
+                        3)getElementsByTagName() <span><br></span>
+                        4)querySelector() <span><br></span>
+                        5)querySelectorAll()
+                    </p>
+                </div>
+            </div>
+            <div class="collapse collapse-arrow bg-base-200">
+                <input type="radio" name="my-accordion-2" />
+                <div class="collapse-title text-xl font-medium">What is event delegation in the context of the DOM, and
+                    why is it useful</div>
+                <div class="collapse-content">
+                    <p>Event delegation is a technique where you can attach event listener over a parent element. so
+                        that when any event occurs it will reached at the child element by the parent element.
+                        If we use event delegation then we don't need use separate event listeners for multiple child
+                        elements.</p>
+                </div>
+            </div>
+            <div class="collapse collapse-arrow bg-base-200">
+                <input type="radio" name="my-accordion-2" />
+                <div class="collapse-title text-xl font-medium">How do you manipulate an element's attributes and styles
+                    using the DOM?</div>
+                <div class="collapse-content">
+                    <p>Using the DOM we can easily changed the HTML elements attribute and style.
+
+                        using setAttribute() we can change the value of attribute
+
+                        using style property we can changed CSS styles (like : color, fontSize) </p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer  -->
+    <footer class="bg-nav h-40 w-full">
+    </footer>
+    <script>
+        document.getElementById('home-btn').addEventListener('click', function () {
+            window.location.href = '/index.html';
+        })
+    </script>
+</body>
+
+</html>

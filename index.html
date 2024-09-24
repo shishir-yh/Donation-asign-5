@@ -56,7 +56,8 @@
         <nav class="bg-nav pt-2">
             <div class="flex justify-around mx-[1%]  pb-8 ">
                 <!-- child 1 -->
-                <button class="btn bg-green-400 sm:btn-sm lg:btn-md px-10">Blog</button>
+                <button id="btn-blog"
+                    class="btn bg-green-400 hover:bg-green-200 sm:btn-sm lg:btn-md px-10">Blog</button>
                 <!-- child 2  -->
                 <div class="flex items-center gap-2 text-xl">
                     <img src="./images/logo.png" alt="Images of logo" srcset="">
@@ -72,8 +73,8 @@
         </nav>
         <!-- button of two  -->
         <div class="flex items-center justify-center pt-12 pb-8 gap-2">
-            <button id="head-donation" class="btn bg-green-400 sm:btn-sm lg:btn-md hover:bg-green-500">Donation</button>
-            <button id="head-history" class="btn bg-gray-300 sm:btn-sm lg:btn-md  hover:bg-green-500">History</button>
+            <button id="head-donation" class="btn bg-green-400 sm:btn-sm lg:btn-md hover:bg-green-200">Donation</button>
+            <button id="head-history" class="btn bg-gray-300 sm:btn-sm lg:btn-md  hover:bg-green-200">History</button>
         </div>
     </header>
 
@@ -86,7 +87,7 @@
                 <div class="noakhali-descriptin">
                     <!-- balance of donation in noakhali  -->
                     <div class="flex items-center bg-balance border border-solid gap-2 py-1 px-1 w-28 rounded-xl mb-2 ">
-                        <img src="./images/coin.png" class="w-full" alt="">
+                        <img src="./images/coin.png" class="" alt="">
                         <h1 id="dnt-bal-nkl">10000</h1>
                     </div>
                     <!-- heading of description  -->
@@ -104,11 +105,10 @@
                     <!-- <button id="btn-nkl" class="btn  bg-green-400 block w-full ">Donation Now</button> -->
                     <!-- ---------------- -->
                     <!-- Your custom button -->
-                    <button id="btn-nkl" class="btn bg-green-400 block w-full">Donation Now</button>
+                    <button id="btn-nkl" class="btn bg-green-400 hover:bg-green-200 block w-full">Donation Now</button>
 
                     <!-- Modal Structure -->
-                    <!-- Open the modal using ID.showModal() method -->
-                    <!-- <button class="btn">open modal</button> -->
+
                     <dialog id="my_modal_2" class="modal">
                         <div class="modal-box">
                             <h3 class="text-3xl font-bold text-center">Congrats!</h3>
@@ -120,7 +120,7 @@
                             <div class="modal-action flex justify-center">
                                 <form method="dialog">
                                     <!-- if there is a button in form, it will close the modal -->
-                                    <button class="btn">Close Confirmation</button>
+                                    <button class="btn hover:bg-green-200">Close Confirmation</button>
                                 </form>
                             </div>
                         </div>
@@ -132,17 +132,18 @@
         <!-- Figure 2  -->
         <div class="border border-solid border-gray-300 rounded-2xl px-4 py-4 my-6">
             <div class="lg:flex items-center gap-4 ">
-                <img src="./images/noakhali.png" alt="flood in noakhali">
+                <img src="./images/feni.png" alt="flood in noakhali">
                 <div class="noakhali-descriptin">
                     <!-- balance of donation in noakhali  -->
                     <div class="flex items-center bg-balance border border-solid gap-2 py-1 px-1 w-28 rounded-xl mb-2 ">
-                        <img src="./images/coin.png" class="w-full" alt="">
+                        <img src="./images/coin.png" class="" alt="">
                         <h1 id="dnt-bal-fni">10000</h1>
                     </div>
                     <!-- heading of description  -->
-                    <h1 class="font-bold mb-2">Donate for Flood at Noakhali, Bangladesh</h1>
+                    <h1 class="font-bold mb-2">Donate for Flood Relief in Feni,Bangladesh</h1>
                     <!-- details of description  -->
-                    <p class="mb-6"> The recent floods in Noakhali have caused significant damage to homes
+                    <p class="mb-6"> The recent floods in
+                        Feni have caused significant damage to homes
                         infrastructure. Your
                         donation will help provide essential supplies and to those affected by this disaster. Every
                         contribution, big or small, makes difference. Please join us in supporting the relief efforts
@@ -154,12 +155,7 @@
                     <!-- <button id="btn-nkl" class="btn  bg-green-400 block w-full ">Donation Now</button> -->
                     <!-- ---------------- -->
                     <!-- Your custom button -->
-                    <button id="btn-fni" class="btn bg-green-400 block w-full">Donation Now</button>
-
-                    <!-- Modal Structure -->
-                    <!-- Open the modal using ID.showModal() method -->
-                    <!-- <button class="btn">open modal</button> -->
-
+                    <button id="btn-fni" class="btn bg-green-400 hover:bg-green-200 block w-full">Donation Now</button>
                 </div>
             </div>
         </div>
@@ -167,21 +163,22 @@
         <!-- Figure 2  -->
         <div class="border border-solid border-gray-300 rounded-2xl px-4 py-4 my-6">
             <div class="lg:flex items-center gap-4 ">
-                <img src="./images/noakhali.png" alt="flood in noakhali">
+                <img src="./images/quota-protest.png" alt="flood in noakhali">
                 <div class="noakhali-descriptin">
                     <!-- balance of donation in noakhali  -->
                     <div class="flex items-center bg-balance border border-solid gap-2 py-1 px-1 w-28 rounded-xl mb-2 ">
-                        <img src="./images/coin.png" class="w-full" alt="">
+                        <img src="./images/coin.png" class="" alt="">
                         <h1 id="dnt-bal-qut">10000</h1>
                     </div>
                     <!-- heading of description  -->
-                    <h1 class="font-bold mb-2">Donate for Flood at Noakhali, Bangladesh</h1>
+                    <h1 class="font-bold mb-2">Aid for Injured in the Quota Movement</h1>
                     <!-- details of description  -->
-                    <p class="mb-6"> The recent floods in Noakhali have caused significant damage to homes
-                        infrastructure. Your
-                        donation will help provide essential supplies and to those affected by this disaster. Every
-                        contribution, big or small, makes difference. Please join us in supporting the relief efforts
-                        and making a positive impact on the lives of those in need.</p>
+                    <p class="mb-6"> The recent Quota movement has resulted in numerous injuries and significant
+                        hardship for many individuals. Your support is crucial in providing medical assistance,
+                        rehabilitation, and necessary supplies to those affected. By contributing, you help ensure that
+                        injured individuals receive the care and support they need during this challenging time. Every
+                        donation plays a vital role in alleviating their suffering and aiding in their recovery. Please
+                        consider making a donation to support these brave individuals in their time of need..</p>
                     <!-- input text of donation  -->
                     <input type="text" id="inp-amn-qut" placeholder="Write Donation Amount"
                         class="input input-bordered mb-4 w-full" />
@@ -189,16 +186,10 @@
                     <!-- <button id="btn-nkl" class="btn  bg-green-400 block w-full ">Donation Now</button> -->
                     <!-- ---------------- -->
                     <!-- Your custom button -->
-                    <button id="btn-qut" class="btn bg-green-400 block w-full">Donation Now</button>
-
-                    <!-- Modal Structure -->
-                    <!-- Open the modal using ID.showModal() method -->
-                    <!-- <button class="btn">open modal</button> -->
-
+                    <button id="btn-qut" class="btn bg-green-400 hover:bg-green-200 block w-full">Donation Now</button>
                 </div>
             </div>
         </div>
-
     </main>
     <div id="history" class="hidden">
 
