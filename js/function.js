@@ -11,7 +11,7 @@ function calculation(totalBal, myBal, innerValue, string) {
     const totalbalNkl = getInnerText(totalBal)
     const Bal = getInnerText(myBal);
     const inpAmnNkl = getInnerValue(innerValue)
-    if (isNaN(inpAmnNkl) || 0 > inpAmnNkl || Bal <= 0 || inpAmnNkl > Bal) {
+    if (inpAmnNkl == '' || isNaN(inpAmnNkl) || 0 > inpAmnNkl || Bal <= 0 || inpAmnNkl > Bal) {
         return alert('INVALID INPUT SIR');
     }
     const newTotal = Number(totalbalNkl + inpAmnNkl);
