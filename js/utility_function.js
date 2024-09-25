@@ -1,5 +1,4 @@
-//ok
-console.log('utilit ok')
+
 document.getElementById('btn-nkl').addEventListener('click', function () {
     calculation('dnt-bal-nkl', 'total-balance', 'inp-amn-nkl', 'for Flood Relief in Noakhali,Bangladesh')
 

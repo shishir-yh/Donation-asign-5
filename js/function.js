@@ -1,4 +1,3 @@
-console.log('funct ok')
 function getInnerText(id) {
     return parseFloat(document.getElementById(id).innerText)
 }
